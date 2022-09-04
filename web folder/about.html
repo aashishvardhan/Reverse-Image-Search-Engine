@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+      <title>Aashish Vardhan</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/all.css">
+ </head>
+  <body>
+      <section class="sub-header">
+        <nav>
+           <a href="index.html"><img src=""></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-arrow-left" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="projects.html"><b>PRODUCT</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <!-- <li><a href="contact.html"><b>CONTACT</b></a></li> -->
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+      </section>
+
+<!---------------- about us content -------------->
+
+<section class="about-us">
+
+      <div class="row">
+          <div class="about-col">
+             <h1>the_falcons</h1>
+             <p>We are students of Lovely Professional University pursuing B.Tech Computer Science and Engineering specialised 
+               in Data Science (Artificial Intelligence and Machine Learning). <b>WE WRITE CODE!!</b>
+          </div>
+          <div class="about-col">
+              <!-- <img src="images/profile pic.jpg">     -->
+          </div>
+      </div> 
+
+</section>
+
+<!---------------------Footer------------------------->
+
+<section class="footer">
+  <div class="icons">
+    <a href="https://www.facebook.com/AashishVardhanp/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/AashishVardhanp" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/aashish_vardhanp" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/aashishvardhan" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>Copyright ©2022 All rights Reserved the_falcons</p>
+</section>
+
+  <!----------Java Script foe Toggling Menu in Mobile-------------> 
+   <script>
+ 
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+           navLinks.style.right = "0";
+      }
+      function hideMenu(){
+           navLinks.style.right = "-200px";
+      }
+
+   </script>
+   
+  </body>
+</html>

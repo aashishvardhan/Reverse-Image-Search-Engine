@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+      <title>Aashish Vardhan</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/all.css">
+ </head>
+  <body>
+      <section class="sub-header2">
+        <nav>
+           <a href="index.html"><img src=""></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-arrow-left" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="projects.html"><b>PRODUCT</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <!-- <li><a href="contact.html"><b>CONTACT</b></a></li> -->
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>The Product</h1>
+      </section>
+
+<!-------------------------Product Source Code------------------->
+
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></head>
+    <body>
+        <div class="container">
+            <h1>Reverse Image Search Engine</h1>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="query_img"><br>
+                <input type="submit">
+            </form>
+            <h2>Query:</h2>
+            {% if query_path %}
+            <img src="{{ query_path }}" width="300px">
+            {% endif %}
+            <h2>Results:</h2>
+            {% for score in scores %}
+            <figure style="float: left; margin-right: 20px; margin-bottom: 20px;">
+                <img src="{{ score[1] }}" height="200px">
+                <figcaption>{{ score[0] }}</figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+    </body>
+</html>
+
+
+
+
+
+<!-----------------Code for Projects------------------>
+
+<!-- <section class="projects">
+  <h1>My Recent Project</h1>
+
+  <div class="row">
+     <div class="service-col">
+         <h3>Usha Health Care</h3>
+         <p>Usha Health Care is a company in Visakhapatnam, that provides services mainly to the people 
+           who are bed ridden with diseases. <br> I have developed a website, so that they could extend their services and 
+           also it becomes easy to the customers,<br> if they want to know more about Usha Health Care. <br>(The Site is yet to be Hosted.)
+         </p>
+          <a href="" class="hero-button">Visit It</a>
+     </div>
+  </div>
+
+</section> -->
+
+<!---------------------------------------Reviews--------------------------->
+
+<!-- <section class="testimonials">
+  <h1>Reviews of My Projects</h1>
+
+  <div class="row">
+      <div class="testimonial-col">
+           <img src="images/user2.jpg">
+           <div>
+               <p>
+                 It is great working with Aashish while building a website for our company. Eventhough we lack knowledge
+                 in this field he made it easy for us to customize our own website.
+               </p>
+               <h3>Mrs. Suryakala</h3>
+           </div>
+      </div>
+  </div>
+
+</section> -->
+
+<!---------------------Footer------------------------->
+
+<section class="footer">
+  <div class="icons">
+    <a href="https://www.facebook.com/AashishVardhanp/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/AashishVardhanp" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/aashish_vardhanp" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/aashishvardhan" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>Copyright ©2022 All rights Reserved the_falcons</p>
+</section>
+
+ <!----------Java Script foe Toggling Menu in Mobile-------------> 
+ <script>
+ 
+  var navLinks = document.getElementById("navLinks");
+  
+  function showMenu(){
+       navLinks.style.right = "0";
+  }
+  function hideMenu(){
+       navLinks.style.right = "-200px";
+  }
+
+</script>
+
+</body>
+</html>
